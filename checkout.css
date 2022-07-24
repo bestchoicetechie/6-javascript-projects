@@ -34,26 +34,29 @@
 }
 form h2 {
   color: blueviolet;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: poppins;
   font-weight: 700;
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 form h3 {
-  font-size: 18px;
+  font-size: 24px;
   color: blueviolet;
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 input,
 label,
 select {
-  font-size: 16px;
-  padding: 5px 0px;
-  margin: 5px 0px;
+  font-size: 20px;
+  padding: 10px 0px;
+  margin: 10px 0px;
 }
 label {
   color: blueviolet;
   font-weight: 500;
+}
+.sec {
+  font-size: 20px;
 }
 .security {
   display: flex;
@@ -64,11 +67,12 @@ label {
   border: none;
   border-bottom: 1px solid gray;
   background: transparent;
-  padding: 5px;
+  padding: 10px;
   display: inline;
   outline: none;
 }
 .full {
+  padding: 10px;
   width: 100%;
   border: none;
   outline: none;
@@ -85,12 +89,13 @@ button {
     rgba(12, 173, 223, 0.85)
   );
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   color: #fff;
   border: none;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 10px;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 12px 25px;
+  letter-spacing: 4px;
   text-align: center;
   cursor: pointer;
 }
