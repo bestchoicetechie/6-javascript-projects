@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee  Array Assignment</title>
+</head>
+<body>
+<div>
+    1.Create an array with multiple object named employee;
+    [
+    {}
+    ,
+    {}
+    ]
+    2.Object property : 
+      id (unique)
+      name: string 
+      age:number
+      designation :string
+      salary :number
+      phone: number
+    
+    3.Filter all developer 
+    4.Filter all emplyoee below age 30
+    5.Find employee below age 30 and salary above 70000
+    6.Filter all accountants
+    7.Find designation accountant and salary below 40000
+    8.Find the employee whose id is 5
+</div>
+<script>
+    let employees = [
+         {
+            id: 'E001',
+            name: 'John Joel',
+            age: 30,
+            designation: 'developer',
+            salary: 3000,
+            phone_Number: 2434567890
+        },
+         {
+            id: 'E002',
+            name: 'James Paul',
+            age: 24,
+            designation: 'Admin',
+            salary: 70000,
+            phone_Number: 1234567890,
+        },
+         {
+            id: 'E003',
+            name: 'Tessy Dee',
+            age: 20,
+            designation: 'developer',
+            salary: 4000,
+            phone_Number: 237567890,
+        },
+         {
+            id: 'E004',
+            name: 'Isaac Joe',
+            age: 30,
+            designation: 'Accountant',
+            salary: 3000,
+            phone_Number: 1984567890
+        },
+         {
+            id: 'E005',
+            name: 'Daniel Aina',
+            age: 30,
+            designation: 'Marketing',
+            salary: 3000,
+            phone_Number: 1234567890,
+        },
+         {
+            id: 'E006',
+            name: 'Awe James',
+            age: 30,
+            designation: 'developer',
+            salary: 75000,
+            phone_Number: 1234567890,
+        },
+         {
+            id: 'E007',
+            name: 'Agbaje Remi',
+            age: 29,
+            designation: 'Accountant',
+            salary: 75000,
+            phone_Number: 1234567890,
+        },
+    ];
+
+    const allDevelopers = employees.filter(employee => employee.designation == 'developer');
+    console.log('Filter for all developers in the array:', allDevelopers);
+
+
+    const developerBelow30 = employees.filter(employee => employee.age < 30);
+    console.log('filter for all developers whose age is below 30 years old:', developerBelow30);
+
+    const allAdmin = employees.filter(employee => employee.designation == 'Admin');
+    console.log('Filter for all Admin in the array', allAdmin);
+
+    let finddev = employees.find(employee => employee.age < 30 && employee.salary > Number(70000));
+    console.log('Find list of employee whose age is less than 30 and salary greater than 70k:', finddev);
+
+    const allAccountants = employees.filter(employee => employee.designation == 'Accountant');
+    console.log('Filter for all accountant', allAccountants);
+
+    const accountSalary = employees.filter(employee => employee.designation == 'Accountant' && employee.salary < 40000);
+    console.log('The filter for all the accountant with salary below 40k', accountSalary);
+
+    const idIs5 = employees.find(employee => employee.id === 'E005');
+    console.log('Emplyee with the id of E005 is', idIs5);
+
+    
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <div id="checkout">
+        <div class="inner">
+            <div class="image">
+                <img src="images/side.png" width="350" height="420" alt="checkout images">
+            </div>
+            <div id="form">
+                
+                <form action="#">
+                    <h2>CheckOut </h2>
+                    <h3>Payment Info</h3>
+                    <div>
+                     <label for="name">Cardholder Name</label><br>
+                     <input type="text" name="name" id="name" class="full" />
+                    </div>
+                    <div>
+                        <label for="cardnumber">Card number</label><br>
+                        <input type="number" name="cardnumber" id="cardnumber" class="full" />
+                    </div>
+                    <div>
+                        <label for="cardtype">Card Type</label>
+                        <select name="" id="" class="full">
+                            <option value="">--Select a Card Type--</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">MasterCard</option>
+                            <option value="verve">Verve</option>
+                        </select>
+     
+                    </div>
+                    <div class="security">
+                        <div>
+                           
+                            <label>Expiry: <input class="inline" type="date" name="expirydate" id="expiry" /></label>
+                         
+                        </div>
+                        <div >
+                            <label>CVV: <input class="inline" type="number" name="expirydate" id="expiry" /></label>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="submit">Checkout</button>
+                    </div>
+     
+                 </form>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

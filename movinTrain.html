@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Train Project</title>
+    <style>
+        #trainDiv{
+            width: 100%;
+            height: 40vh;
+            padding: 20px;
+
+        }
+        #train{
+            position: absolute;
+
+        }
+        .below{
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+        }
+        #moveBtn, #reverseBtn{
+            padding: 10px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="trainDiv">
+        <img src="images/train1.png" id="train" alt="Moving Train" />
+    </div>
+    <div class="below">
+        <p>Click the button below to move the train to right</p>
+        <button id="moveBtn" >Click to move train</button>
+        <button id="reverseBtn" >Click to reverse train</button>
+
+    </div>
+    <script>
+        const train = document.getElementById('train');
+        const moveBtn = document.getElementById('moveBtn');
+        const reverseBtn = document.getElementById('reverseBtn');
+        var trainLeft = 0;
+        var trainReverse = 0;
+        moveBtn.addEventListener('click', (event)=>{
+            trainLeft+=40;
+            train.style.left = trainLeft + "px";
+            // return trainLeft;
+        });
+        reverseBtn.addEventListener('click', (event)=>{
+            trainReverse-=40;
+            train.style.left = trainReverse + "px";
+        })
+
+
+       
+      
+    </script>
+</body>
+</html>

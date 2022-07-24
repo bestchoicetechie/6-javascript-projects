@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#checkout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(images/pcc.png);
+  overflow: hidden;
+}
+#checkout .inner {
+  margin: auto 0;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  width: 50vw;
+  height: 80vh;
+  background-color: rgb(246, 243, 243);
+  border-radius: 30px;
+  overflow: hidden;
+}
+#checkout .inner .image img {
+  height: 100% !important;
+  width: 100% !important;
+}
+#form {
+  padding: 20px;
+  align-items: left !important;
+  text-align: left;
+}
+form h2 {
+  color: blueviolet;
+  font-size: 2rem;
+  font-family: poppins;
+  font-weight: 700;
+  padding: 5px 0px;
+}
+form h3 {
+  font-size: 18px;
+  color: blueviolet;
+  padding: 10px 0px;
+}
+input,
+label,
+select {
+  font-size: 16px;
+  padding: 5px 0px;
+  margin: 5px 0px;
+}
+label {
+  color: blueviolet;
+  font-weight: 500;
+}
+.security {
+  display: flex;
+}
+
+.inline {
+  border-radius: 20px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background: transparent;
+  padding: 5px;
+  display: inline;
+  outline: none;
+}
+.full {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(189, 187, 187);
+  border-radius: 10px;
+  background: transparent;
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(113, 33, 138, 0.993),
+    rgba(12, 173, 223, 0.85)
+  );
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}

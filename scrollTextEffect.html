@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .container{
+            margin-left: 50px;
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        p, h3{
+            margin-left: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>Scroll the border text to see the effect</h3>
+    <div class="container">
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aspernatur aliquam quis? Quibusdam eligendi earum soluta velit iure, dolores exercitationem sunt dicta ad provident quae blanditiis quo reiciendis facilis illo asperiores assumenda quam hic! Autem ab corporis maxime distinctio libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis nesciunt sunt, magnam iusto mollitia illum aliquid culpa eligendi debitis consequatur labore tempore dignissimos a, reprehenderit neque incidunt vitae? Aspernatur aliquid vero sunt placeat, explicabo nemo atque impedit commodi similique id, sapiente modi porro, iste iure assumenda delectus ipsa temporibus.</p>
+    </div>
+    <p id="notice"></p>
+    <script>
+        const container = document.querySelector('.container');
+        // const para = document.getElementsByTagName('p');
+        container.addEventListener('scroll', (event)=>{
+            document.querySelector('.para').style.color= 'red';
+            document.querySelector('.para').style.background= 'green';
+            document.querySelector('#notice').innerHTML= 'You are now scrolling';
+        })
+    </script>
+</body>
+</html>

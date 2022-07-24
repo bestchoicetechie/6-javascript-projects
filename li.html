@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li Element Assignment</title>
+</head>
+<body>
+    1. Create a ul element and append it to body.
+    2.Create 2 li elements , add text to li elements and then append it to ul tag.
+    3.click event on ul , change the color of li element that was clicked.
+
+    <script>
+        //creat ul element
+        const ul = document.createElement('ul');
+        //create li elements
+        const li = document.createElement('li');
+        const li2 = document.createElement('li');
+        //create textnodes append it to li
+        li.appendChild(document.createTextNode('This is first  Li from javascript'))
+        li2.appendChild(document.createTextNode('This is second Li from javascript'))
+       //append li elements to ul
+        ul.appendChild(li);
+        ul.appendChild(li2);
+         //append ul element to body
+         document.body.appendChild(ul);
+
+         li.addEventListener('click', ()=>{
+             const li = document.getElementsByTagName('li');
+        
+             for (let i = 0; i < li.length; i++) {
+                 const liColor = li[i].style.color = 'red';
+             };
+         });
+
+
+    </script>
+</body>
+</html>
